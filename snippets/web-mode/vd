@@ -1,0 +1,5 @@
+# name : vd
+# --
+echo "<pre>";
+var_dump($0);
+echo "</pre>";

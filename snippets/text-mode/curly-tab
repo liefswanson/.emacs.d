@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: curly formatting 
+# key: {
+# --
+{
+	$0
+	

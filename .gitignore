@@ -1,0 +1,23 @@
+# Compiled
+*.elc
+
+# Packaging
+.cask
+
+# backups
+*~
+
+# sessions
+session\.[0-9a-e]*
+
+# big huge labs api key
+bhl\.api
+
+# autosave
+auto-save-list/.*
+
+# packages
+elpa/
+
+# imaged-dired
+image-dired/.*

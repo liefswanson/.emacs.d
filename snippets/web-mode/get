@@ -1,0 +1,4 @@
+#contributor : Anders Bach Nielsen <abachn@abachn.net>
+#name : $_GET
+# --
+$_GET["$1"] $0
