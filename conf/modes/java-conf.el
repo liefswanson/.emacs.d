@@ -4,7 +4,6 @@
 
 ;;; Code:
 
-
 (font-lock-add-keywords
  'malabar-mode
  '(("\\<\\(\\sw+\\) *(" 1 'font-lock-function-name-face))

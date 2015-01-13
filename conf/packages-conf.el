@@ -27,7 +27,6 @@
 	icicles
 	js2-mode
 	less-css-mode
-	malabar-mode
 	markdown-mode
 	pkg-info
 	popup

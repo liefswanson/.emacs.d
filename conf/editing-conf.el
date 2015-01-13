@@ -58,10 +58,15 @@
 ;; semantic
 
 (setq semantic-default-submodes
-	  '(global-semantic-idle-scheduler-mode
-		global-semanticdb-minor-mode
-		global-semantic-idle-summary-mode
-		global-semantic-mru-bookmark-mode))
+	  '(
+		global-semantic-idle-scheduler-mode t
+		global-semanticdb-minor-mode t
+		global-semantic-idle-summary-mode t
+		global-semantic-mru-bookmark-mode t
+		global-semanticdb-minor-mode nil
+		))
+
+(semantic-mode 1)
 
 ;;spellcheck comments
 (add-hook 'prog-mode-hook #'flyspell-prog-mode)
