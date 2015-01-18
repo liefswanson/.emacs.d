@@ -1,0 +1,30 @@
+;; Object 361a0/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "361a0/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GLEW_STATIC" variable (:constant-flag t) nil [11 22])
+            ("GL/glew.h" include (:system-flag t) nil [23 43])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [44 67])
+            ("main" function (:type "int") nil [69 630]))          
+      :file "main.cpp"
+      :pointmax 631
+      :fsize 630
+      :lastmodtime '(21691 15831 473060 800000)
+      :unmatched-syntax nil)
+    (semanticdb-table "makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("all" function (:arguments ("main.cpp" "main")) nil [92 144])
+            ("clean" function nil nil [145 164]))          
+      :file "makefile"
+      :pointmax 164
+      :fsize 145
+      :lastmodtime '(21691 15517 731921 100000)
+      :unmatched-syntax nil))
+  :file "!home!data!361a0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object javascripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "javascripts/"
+  :tables
+  (list
+    (semanticdb-table "application.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "application.js"
+      :pointmax 668
+      :fsize 667
+      :lastmodtime '(21688 12383 630642 600000)
+      :unmatched-syntax nil))
+  :file "!home!data!todo_app!app!assets!javascripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
