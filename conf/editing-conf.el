@@ -33,6 +33,11 @@
   kept-old-versions 2
   version-control t)
 
+;;fic-mode
+(add-hook 'prog-mode-hook #'fic-mode)
+
+;;spellcheck comments
+(add-hook 'prog-mode-hook #'flyspell-prog-mode)
 
 ;;auto-complete
 (require 'popup)
@@ -40,11 +45,14 @@
 
 (global-auto-complete-mode t)
 
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/dict/")
+;(add-to-list 'ac-dictionary-directories "~/.emacs.d/dict/")
 
-(setq ac-auto-show-menu 0.5)
-(setq ac-auto-start 3)
+(setq ac-auto-show-menu 0.2)
+(setq ac-delay 0.2)
+(setq ac-auto-start t)
 (setq ac-use-fuzzy t)
+;;needed to make the ac menu show up in timely manner
+(ac-flyspell-workaround)
 
 ;;snippets
 (yas-global-mode t)
@@ -68,11 +76,7 @@
 
 (semantic-mode 1)
 
-;;spellcheck comments
-(add-hook 'prog-mode-hook #'flyspell-prog-mode)
 
-;;fic-mode
-(add-hook 'prog-mode-hook #'fic-mode)
 
 ;;electric modes
 (electric-indent-mode t)

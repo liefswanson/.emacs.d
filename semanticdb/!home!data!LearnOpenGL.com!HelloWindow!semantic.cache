@@ -1,0 +1,48 @@
+;; Object HelloWindow/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "HelloWindow/"
+  :tables
+  (list
+    (semanticdb-table "Hello.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("sstream" include (:system-flag t) nil [21 39])
+            ("fstream" include (:system-flag t) nil [40 58])
+            ("streambuf" include (:system-flag t) nil [59 79])
+            ("GL/glew.h" include (:system-flag t) nil [81 101])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [102 125])
+            ("key_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [145 164])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [165 173])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [174 187])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [188 199])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [200 209]))                  
+                :type "void")
+                nil [127 210])
+            ("main" function (:type "int") nil [212 1491])
+            ("key_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1511 1530])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [1531 1539])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [1540 1553])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [1554 1565])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [1566 1575]))                  
+                :type "void")
+                nil [1493 1679]))          
+      :file "Hello.cpp"
+      :pointmax 1680
+      :fsize 1679
+      :lastmodtime '(21702 57491 233517 200000)
+      :unmatched-syntax nil))
+  :file "!home!data!LearnOpenGL.com!HelloWindow!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
