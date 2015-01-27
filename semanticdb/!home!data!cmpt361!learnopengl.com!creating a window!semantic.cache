@@ -1,0 +1,105 @@
+;; Object creating a window/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "creating a window/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [21 41])
+            ("GL/glew.h" include (:system-flag t) nil [43 63])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [64 87])
+            ("key_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107 126])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [127 135])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [136 149])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [150 161])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [162 171]))                  
+                :type "void")
+                nil [89 177])
+            ("main" function (:type "int") nil [179 856])
+            ("glfwInit" function
+               (:prototype-flag t
+                :type "int")
+                nil [300 311])
+            ("glfwWindowHint" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("GLFW_CONTEXT_VERSION_MAJOR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [331 358])
+                    ("" variable (:type ("GLMajor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [359 367]))                  
+                :type "int")
+                nil [316 368])
+            ("glfwWindowHint" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("GLFW_CONTEXT_VERSION_MINOR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [388 415])
+                    ("" variable (:type ("GLMinor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [416 424]))                  
+                :type "int")
+                nil [373 425])
+            ("glfwWindowHint" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("GLFW_OPENGL_PROFILE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [445 465])
+                    ("" variable (:type ("GLFW_OPENGL_CORE_PROFILE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [466 491]))                  
+                :type "int")
+                nil [430 492])
+            ("glfwWindowHint" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("GLFW_RESIZABLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [512 527])
+                    ("" variable (:type ("GL_FALSE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [528 537]))                  
+                :type "int")
+                nil [497 538])
+            ("window" variable
+               (:pointer 1
+                :default-value "glfwCreateWindow(800, 600, \"LearnOpenGL\", nullptr, nullptr)"
+                :type ("GLFWwindow" type (:type "class") nil nil))
+                nil [541 622])
+            ("glfwMakeContextCurrent" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("window" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [647 654]))                  
+                :type "int")
+                nil [624 655])
+            ("glewExperimental" variable
+               (:default-value "GL_TRUE"
+                :type "int")
+                nil [658 685])
+            ("glewInit" function
+               (:prototype-flag t
+                :type "int")
+                nil [687 698])
+            ("glViewport" function
+               (:prototype-flag t
+                :type "int")
+                nil [700 727])
+            ("glfwTerminate" function
+               (:prototype-flag t
+                :type "int")
+                nil [822 838]))          
+      :file "main.cpp"
+      :pointmax 857
+      :fsize 856
+      :lastmodtime '(21692 21307 779154 200000)
+      :unmatched-syntax nil)
+    (semanticdb-table "makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("all" function (:arguments ("main.cpp")) nil [91 179])
+            ("clean" function nil nil [212 232]))          
+      :file "makefile"
+      :pointmax 232
+      :fsize 231
+      :lastmodtime '(21692 21273 842547 100000)
+      :unmatched-syntax nil))
+  :file "!home!data!cmpt361!learnopengl.com!creating a window!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

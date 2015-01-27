@@ -11,7 +11,7 @@
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
 
-(defvar my-packages
+(defvar elpa-packages
   '(auto-complete
 	csharp-mode
 	omnisharp
@@ -46,13 +46,25 @@
   "elpa packages"
   )
 
+(defvar melpa-packages
+  '(floobits
+	)
+  "melpa-packages"
+  )
+
 (defun fetch-my-packages ()
   (interactive)
   (when (not package-archive-contents)
 	(package-refresh-contents)
 	)
 
-  (dolist (p my-packages)
+  (dolist (p elpa-packages)
+	(when (not (package-installed-p p))
+	  (package-install p)
+	  )
+	)
+
+  (dolist (p melpa-packages)
 	(when (not (package-installed-p p))
 	  (package-install p)
 	  )
