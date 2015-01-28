@@ -27,10 +27,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(flycheck-clang-language-standard "c++14")
  '(delete-selection-mode t)
+ '(ergoemacs-keyboard-layout "programmer-dv")
+ '(flycheck-clang-language-standard "c++14")
  '(global-auto-complete-mode t)
- '(initial-scratch-message nil)
  '(org-CUA-compatible nil)
  '(recentf-menu-before nil)
  '(recentf-mode t)

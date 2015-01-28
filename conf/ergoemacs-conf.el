@@ -8,7 +8,7 @@
 (setq ergoemacs-ctl-c-or-ctl-x-delay 0.2)
 (setq ergoemacs-handle-ctl-c-or-ctl-x (quote both))
 (setq ergoemacs-ini-mode t)
-(setq ergoemacs-keyboard-layout "us")
+;(setq ergoemacs-keyboard-layout "programmer-dv")
 (setq ergoemacs-smart-paste nil)
 (setq ergoemacs-theme "standard")
 (setq ergoemacs-theme-options (quote ((save-options-on-exit off))))
