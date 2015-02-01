@@ -4,12 +4,12 @@
 
 ;;; Code:
 (require 'package)
-(package-initialize)
 
 ;; elpa/package archives
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
+(package-initialize)
 
 (defvar elpa-packages
   '(auto-complete
@@ -52,21 +52,24 @@
   "melpa-packages"
   )
 
-(defun fetch-my-packages ()
-  (interactive)
-  (when (not package-archive-contents)
-	(package-refresh-contents)
-	)
+(defvar marmalade-packages
+  '()
+  "marmalade-packages"
+  )
 
-  (dolist (p elpa-packages)
-	(when (not (package-installed-p p))
-	  (package-install p)
+(defun fetch-my-packages ()
+  (unless package-archive-contents
+  (package-refresh-contents))
+
+  (dolist (package elpa-packages)
+	(unless (package-installed-p package)
+	  (package-install package)
 	  )
 	)
 
-  (dolist (p melpa-packages)
-	(when (not (package-installed-p p))
-	  (package-install p)
+  (dolist (package melpa-packages)
+	(unless (package-installed-p package)
+	  (package-install package)
 	  )
 	)
   )
