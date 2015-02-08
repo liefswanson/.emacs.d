@@ -13,8 +13,19 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:background nil))))
+ '(company-echo-common ((t (:foreground "#FF80F4"))))
+ '(company-preview-common ((t (:inherit company-preview :foreground "white"))))
+ '(company-scrollbar-bg ((t (:inherit company-tooltip :background "dim gray"))))
+ '(company-tooltip-selection ((t (:inherit company-tooltip :background "dim gray"))))
  '(hl-line ((t (:background "#151515" :underline nil))))
+ '(popup-face ((t (:background "#161a1f" :foreground "white"))))
+ '(popup-isearch-match ((t (:background "dim gray"))))
+ '(popup-menu-mouse-face ((t (:background "dim gray" :foreground "white"))))
+ '(popup-menu-selection-face ((t (:background "dim gray" :foreground "white"))))
+ '(popup-scroll-bar-background-face ((t (:background "dim gray"))))
+ '(popup-tip-face ((t (:background "161a1f" :foreground "#F92672"))))
  '(tabbar-button ((t (:inherit tabbar-default))))
+ '(tabbar-default ((t (:inherit variable-pitch :background "dim gray" :foreground "white" :height 0.8))))
  '(tabbar-modified ((t (:inherit tabbar-default :foreground "green"))))
  '(tabbar-selected ((t (:inherit tabbar-default :background "gray15" :foreground "white"))))
  '(tabbar-unselected ((t (:inherit tabbar-default))))
@@ -35,10 +46,22 @@
 	 (save-options-on-exit off))))
  '(flycheck-clang-language-standard "c++14")
  '(global-auto-complete-mode t)
- '(org-CUA-compatible nil)
- '(recentf-menu-before nil)
+ '(initial-scratch-message
+   #(";; This buffer is for notes you don't want to save, and for Lisp evaluation.
+;; If you want to create a file, visit that file with Ctrl+O,
+;; then enter the text in that file's own buffer." 131 135
+													   (face ergoemacs-pretty-key)
+													   136 137
+													   (face ergoemacs-pretty-key)))
+ '(org-CUA-compatible t)
+ '(org-special-ctrl-a/e t)
+ '(org-support-shift-select t)
+ '(recentf-menu-before "Close")
  '(recentf-mode t)
- '(shift-select-mode nil))
+ '(scroll-error-top-bottom t)
+ '(set-mark-command-repeat-pop t)
+ '(tabbar-mode t nil (tabbar))
+ '(tabbar-mwheel-mode t nil (tabbar)))
 
 (add-to-list 'load-path "~/.emacs.d/non-elpa")
 ;(load-library "flycheck-java")
