@@ -1,0 +1,120 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "InitShader.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Angel.h" include nil nil [2 20])
+            ("Angel" type
+               (:members 
+                  ( ("readShaderSource" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("shaderFile" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [135 158]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [105 449])
+                    ("InitShader" function
+                       (:arguments 
+                          ( ("vShaderFile" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [540 564])
+                            ("fShaderFile" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [565 589]))                          
+                        :type ("GLuint" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [522 2254]))                  
+                :type "namespace")
+                nil [22 2257]))          
+      :file "InitShader.cpp"
+      :pointmax 2290
+      :fsize 2289
+      :lastmodtime '(20413 41718 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Angel.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__ANGEL_H__" variable (:constant-flag t) nil [283 294])
+            ("cmath" include (:system-flag t) nil [417 433])
+            ("iostream" include (:system-flag t) nil [434 453])
+            ("cstdio" include (:system-flag t) nil [454 471])
+            ("M_PI" variable (:constant-flag t) nil [565 569])
+            ("GL/glew.h" include (:system-flag t) nil [1076 1098])
+            ("GL/freeglut.h" include (:system-flag t) nil [1124 1150])
+            ("GL/freeglut_ext.h" include (:system-flag t) nil [1151 1181])
+            ("BUFFER_OFFSET" variable (:constant-flag t) nil [1279 1292])
+            ("Angel" type
+               (:members 
+                  ( ("InitShader" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("vertexShaderFile" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1566 1595])
+                            ("fragmentShaderFile" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1601 1633]))                          
+                        :type ("GLuint" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1547 1634])
+                    ("DivideByZeroTolerance" variable
+                       (:constant-flag t
+                        :default-value "GLfloat(1.0e-07)"
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1805 1861])
+                    ("DegreesToRadians" variable
+                       (:constant-flag t
+                        :default-value "M_PI / 180.0"
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1896 1943]))                  
+                :type "namespace")
+                nil [1467 1946])
+            ("vec.h" include nil nil [1968 1984])
+            ("mat.h" include nil nil [1985 2001])
+            ("CheckError.h" include nil nil [2002 2025])
+            ("Print" variable (:constant-flag t) nil [2035 2040])
+            ("Angel" using (:type ("Angel" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2161 2183]))          
+      :file "Angel.h"
+      :pointmax 2207
+      :fsize 2206
+      :lastmodtime '(21527 6618 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Print" (spp-arg-list ("x") 2040 . 2043) . 
+              ((DO "do" 2045 . 2047) (semantic-list "{ std::cerr << #x \" = \" << (x) << std::endl; }" 2048 . 2094) (WHILE "while" 2095 . 2100) (semantic-list "(0)" 2100 . 2103)))
+          ("__ANGEL_H__")
+          ("BUFFER_OFFSET" (spp-arg-list ("offset") 1292 . 1302) . ((semantic-list "((GLvoid*) (offset))" 1305 . 1325)))
+          ("M_PI" . ((number "3.14159265358979323846" 571 . 593)))
+          )
+)
+    (semanticdb-table "vec.h"
+      :file "vec.h"
+      :fsize 10448
+      :lastmodtime '(19906 54780 0 0))
+    (semanticdb-table "mat.h"
+      :file "mat.h"
+      :fsize 18231
+      :lastmodtime '(19908 29344 0 0))
+    (semanticdb-table "CheckError.h"
+      :file "CheckError.h"
+      :fsize 1290
+      :lastmodtime '(19671 27942 0 0)))
+  :file "!home!data!1422060314_692__A1!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -93,13 +93,18 @@
     (semanticdb-table "makefile"
       :major-mode 'makefile-gmake-mode
       :tags 
-        '( ("all" function (:arguments ("main.cpp")) nil [91 179])
-            ("clean" function nil nil [212 232]))          
+        '( ("libs" variable (:default-value ("-lGLEW" "-lglfw" "-lGL" "-lX11" "-lpthread" "-lXrandr" "-lXi")) nil [1 57])
+            ("flags" variable (:default-value ("-Wall" "-g")) nil [57 74])
+            ("std" variable (:default-value ("-std=c++14")) nil [74 91])
+            ("cc" variable (:default-value ("clang++")) nil [91 104])
+            ("all" function (:arguments ("a.out")) nil [106 117])
+            ("a.out" function (:arguments ("main.cpp")) nil [118 183])
+            ("clean" function nil nil [184 204]))          
       :file "makefile"
-      :pointmax 232
-      :fsize 231
-      :lastmodtime '(21692 21273 842547 100000)
-      :unmatched-syntax nil))
+      :pointmax 204
+      :fsize 203
+      :lastmodtime '(21710 54393 199440 200000)
+      :unmatched-syntax '((shell-command 192 . 203) (bol 191 . 191) (symbol 111 . 116) (punctuation 109 . 110) (symbol 106 . 109) (bol 106 . 106))))
   :file "!home!data!cmpt361!learnopengl.com!creating a window!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

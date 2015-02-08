@@ -20,6 +20,7 @@
 	epl
 	ergoemacs-mode
 	fic-mode
+	fish-mode
 	flycheck
 	fringe-helper
 	go-mode
@@ -48,6 +49,7 @@
 
 (defvar melpa-packages
   '(floobits
+	matlab-mode
 	)
   "melpa-packages"
   )

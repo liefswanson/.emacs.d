@@ -29,6 +29,10 @@
  ;; If there is more than one, they won't work right.
  '(delete-selection-mode t)
  '(ergoemacs-keyboard-layout "programmer-dv")
+ '(ergoemacs-theme-options
+   (quote
+	((ido-prev-next-instead-of-left-right on)
+	 (save-options-on-exit off))))
  '(flycheck-clang-language-standard "c++14")
  '(global-auto-complete-mode t)
  '(org-CUA-compatible nil)

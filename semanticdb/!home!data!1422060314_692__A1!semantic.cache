@@ -1,0 +1,133 @@
+;; Object 1422060314_692__A1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "1422060314_692__A1/"
+  :tables
+  (list
+    (semanticdb-table "FruitTetris.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("include/Angel.h" include nil nil [478 504])
+            ("cstdlib" include (:system-flag t) nil [505 523])
+            ("iostream" include (:system-flag t) nil [524 543])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [545 565])
+            ("xsize" variable
+               (:default-value "400"
+                :type "int")
+                nil [679 695])
+            ("ysize" variable
+               (:default-value "720"
+                :type "int")
+                nil [697 713])
+            ("tile" variable
+               (:dereference 1
+                :type ("vec2" type (:type "class") nil nil))
+                nil [731 744])
+            ("tilepos" variable
+               (:default-value "vec2(5, 19)"
+                :type ("vec2" type (:type "class") nil nil))
+                nil [846 873])
+            ("allRotationsLshape" variable
+               (:dereference 2
+                :default-value "{{vec2(0, 0), vec2(-1,0), vec2(1, 0), vec2(-1,-1)},
+	{vec2(0, 1), vec2(0, 0), vec2(0,-1), vec2(1, -1)},     
+	{vec2(1, 1), vec2(-1,0), vec2(0, 0), vec2(1,  0)},  
+	{vec2(-1,1), vec2(0, 1), vec2(0, 0), vec2(0, -1)}}"
+                :type ("vec2" type (:type "class") nil nil))
+                nil [1124 1373])
+            ("orange" variable
+               (:default-value "vec4(1.0, 0.5, 0.0, 1.0)"
+                :type ("vec4" type (:type "class") nil nil))
+                nil [1385 1424])
+            ("white" variable
+               (:default-value "vec4(1.0, 1.0, 1.0, 1.0)"
+                :type ("vec4" type (:type "class") nil nil))
+                nil [1426 1465])
+            ("black" variable
+               (:default-value "vec4(0.0, 0.0, 0.0, 1.0)"
+                :type ("vec4" type (:type "class") nil nil))
+                nil [1466 1505])
+            ("board" variable
+               (:dereference 2
+                :type "bool")
+                nil [1569 1588])
+            ("boardcolours" variable
+               (:dereference 1
+                :type ("vec4" type (:type "class") nil nil))
+                nil [1876 1900])
+            ("vPosition" variable (:type ("GLuint" type (:type "class") nil nil)) nil [1957 1974])
+            ("vColor" variable (:type ("GLuint" type (:type "class") nil nil)) nil [1975 1989])
+            ("locxsize" variable (:type ("GLuint" type (:type "class") nil nil)) nil [2043 2059])
+            ("locysize" variable (:type ("GLuint" type (:type "class") nil nil)) nil [2060 2076])
+            ("vaoIDs" variable
+               (:dereference 1
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [2093 2110])
+            ("vboIDs" variable
+               (:dereference 1
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [2178 2195])
+            ("updatetile" function (:type "void") nil [2642 3602])
+            ("newtile" function (:type "void") nil [3786 4449])
+            ("initGrid" function (:type "void") nil [4570 6157])
+            ("initBoard" function (:type "void") nil [6160 7722])
+            ("initCurrentTile" function (:type "void") nil [7766 8351])
+            ("init" function (:type "void") nil [8353 9221])
+            ("rotate" function (:type "void") nil [9388 9412])
+            ("checkfullrow" function
+               (:arguments 
+                  ( ("row" variable (:type "int") (reparse-symbol arg-sub-list) [9732 9740]))                  
+                :type "void")
+                nil [9714 9745])
+            ("settile" function (:type "void") nil [9971 9991])
+            ("movetile" function
+               (:arguments 
+                  ( ("direction" variable (:type ("vec2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10292 10307]))                  
+                :type "bool")
+                nil [10278 10326])
+            ("restart" function (:type "void") nil [10531 10550])
+            ("display" function (:type "void") nil [10688 11472])
+            ("reshape" function
+               (:arguments 
+                  ( ("w" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11782 11792])
+                    ("h" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11793 11803]))                  
+                :type "void")
+                nil [11769 11856])
+            ("special" function
+               (:arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [12021 12029])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [12030 12036])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [12037 12043]))                  
+                :type "void")
+                nil [12008 12047])
+            ("keyboard" function
+               (:arguments 
+                  ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [12213 12231])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [12232 12238])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [12239 12245]))                  
+                :type "void")
+                nil [12199 12503])
+            ("idle" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12634 12639]))                  
+                :type "void")
+                nil [12624 12665])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [12795 12804])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12805 12817]))                  
+                :type "int")
+                nil [12786 13279]))          
+      :file "FruitTetris.cpp"
+      :pointmax 13280
+      :fsize 13279
+      :lastmodtime '(21536 37488 0 0)
+      :unmatched-syntax nil))
+  :file "!home!data!1422060314_692__A1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
