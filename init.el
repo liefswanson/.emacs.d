@@ -63,7 +63,7 @@
  '(tabbar-mode t nil (tabbar))
  '(tabbar-mwheel-mode t nil (tabbar)))
 
-(add-to-list 'load-path "~/.emacs.d/non-elpa")
+;(add-to-list 'load-path "~/.emacs.d/non-elpa")
 ;(load-library "flycheck-java")
 
 (add-to-list 'load-path "~/.emacs.d/conf")
@@ -71,6 +71,8 @@
 (load-library "tabbar-conf")
 (load-library "ergoemacs-conf")
 (load-library "editing-conf")
+(load-library "bindings-conf")
+
 
 (add-to-list 'load-path "~/.emacs.d/conf/modes")
 (load-library "c-conf")

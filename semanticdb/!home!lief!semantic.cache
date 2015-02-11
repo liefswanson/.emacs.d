@@ -18,14 +18,7 @@
       :fsize 180
       :lastmodtime '(21713 56726 127925 769000)
       :unmatched-syntax nil)
-    (semanticdb-table "maven.py"
-      :major-mode 'python-mode
-      :tags nil
-      :file "maven.py"
-      :pointmax 202
-      :fsize 0
-      :lastmodtime '(21715 3818 149169 203000)
-      :unmatched-syntax nil))
+)
   :file "!home!lief!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")
