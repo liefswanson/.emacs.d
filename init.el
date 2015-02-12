@@ -46,29 +46,23 @@
 	 (save-options-on-exit off))))
  '(flycheck-clang-language-standard "c++14")
  '(global-auto-complete-mode t)
- '(initial-scratch-message
-   #(";; This buffer is for notes you don't want to save, and for Lisp evaluation.
-;; If you want to create a file, visit that file with Ctrl+O,
-;; then enter the text in that file's own buffer." 131 135
-													   (face ergoemacs-pretty-key)
-													   136 137
-													   (face ergoemacs-pretty-key)))
+
+ '(minimap-width-fraction 0.13)
+ '(minimap-window-location (quote right))
  '(org-CUA-compatible t)
  '(org-special-ctrl-a/e t)
  '(org-support-shift-select t)
  '(recentf-menu-before "Close")
  '(recentf-mode t)
  '(scroll-error-top-bottom t)
- '(set-mark-command-repeat-pop t)
- '(tabbar-mode t nil (tabbar))
- '(tabbar-mwheel-mode t nil (tabbar)))
+ '(set-mark-command-repeat-pop t))
 
 ;(add-to-list 'load-path "~/.emacs.d/non-elpa")
 ;(load-library "flycheck-java")
 
 (add-to-list 'load-path "~/.emacs.d/conf")
 (load-library "theme-conf")
-(load-library "tabbar-conf")
+;(load-library "tabbar-conf")
 (load-library "ergoemacs-conf")
 (load-library "editing-conf")
 (load-library "bindings-conf")

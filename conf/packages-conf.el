@@ -50,6 +50,8 @@
 (defvar melpa-packages
   '(floobits
 	matlab-mode
+	minimap
+	smooth-scrolling
 	)
   "melpa-packages"
   )
