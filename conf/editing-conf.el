@@ -37,7 +37,7 @@
 (add-hook 'prog-mode-hook #'fic-mode)
 
 ;;spellcheck comments
-(add-hook 'prog-mode-hook #'flyspell-prog-mode)
+;(add-hook 'prog-mode-hook #'flyspell-prog-mode)
 
 ;;auto-complete
 (require 'popup)
@@ -52,11 +52,11 @@
 (setq ac-auto-start t)
 (setq ac-use-fuzzy t)
 ;;needed to make the ac menu show up in timely manner
-(ac-flyspell-workaround)
+;(ac-flyspell-workaround)
 
 ;;snippets
-(yas-global-mode t)
 (setq yas-snippet-dirs (quote ("~/.emacs.d/snippets")))
+(yas-global-mode t)
 (setq yas-use-menu (quote abbreviate))
 
 (global-flycheck-mode t)

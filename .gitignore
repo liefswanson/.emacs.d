@@ -24,3 +24,5 @@ elpa/
 
 # imaged-dired
 image-dired/.*
+
+ac-comphist.dat
