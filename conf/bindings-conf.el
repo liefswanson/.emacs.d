@@ -13,7 +13,6 @@
 
 (global-set-key (kbd "C-_") 'show-subtree)
 (global-set-key (kbd "C--") 'hide-subtree)
-										;company nav
 
 (define-key yas-minor-mode-map (kbd "<tab>") nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
@@ -23,6 +22,9 @@
 (require 'auto-complete-config)
 (define-key ac-complete-mode-map (kbd "M-c") 'ac-previous)
 (define-key ac-complete-mode-map (kbd "M-t") 'ac-next)
+(define-key ac-complete-mode-map (kbd "M-n") nil)
+
+(global-set-key (kbd "M-n") 'forward-char)
 
 (define-key company-mode-map (kbd "M-c") 'company-select-previous)
 (define-key company-mode-map (kbd "M-t") 'ompany-select-next)
