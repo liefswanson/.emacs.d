@@ -9,7 +9,7 @@
 (global-set-key (kbd "M-3") 'split-window-vertically)
 (global-set-key [mouse-2] 'minimap-toggle)
 
-(global-unset-key (kbd "M-n"))
+(global-unset-key (kbd "C-n"))
 
 (global-set-key (kbd "C-_") 'show-subtree)
 (global-set-key (kbd "C--") 'hide-subtree)
@@ -22,12 +22,9 @@
 (require 'auto-complete-config)
 (define-key ac-complete-mode-map (kbd "M-c") 'ac-previous)
 (define-key ac-complete-mode-map (kbd "M-t") 'ac-next)
-(define-key ac-complete-mode-map (kbd "M-n") nil)
+(define-key ac-complete-mode-map (kbd "M-n") 'forward-char)
 
-(global-set-key (kbd "M-n") 'forward-char)
-
-(define-key company-mode-map (kbd "M-c") 'company-select-previous)
-(define-key company-mode-map (kbd "M-t") 'ompany-select-next)
+;(global-set-key (kbd "M-n") 'forward-char)
 
 (provide 'bindings-conf)
 ;;; bindings-conf.el ends here

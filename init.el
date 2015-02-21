@@ -39,6 +39,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(delete-selection-mode t)
+ '(ensime-completion-style nil)
  '(ergoemacs-keyboard-layout "programmer-dv")
  '(ergoemacs-theme-options
    (quote
