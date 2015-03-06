@@ -24,6 +24,7 @@
 	flycheck
 	fringe-helper
 	go-mode
+	glsl-mode
 	haskell-mode
 	icicles
 	js2-mode
