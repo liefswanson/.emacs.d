@@ -14,13 +14,14 @@
 (defvar elpa-packages
   '(auto-complete
 	csharp-mode
-	omnisharp
 	dash
+	d-mode
 	ensime
 	epl
 	ergoemacs-mode
 	fic-mode
 	fish-mode
+	floobits
 	flycheck
 	fringe-helper
 	go-mode
@@ -30,11 +31,17 @@
 	js2-mode
 	less-css-mode
 	markdown-mode
+	matlab-mode
+	minimap
+	multiple-cursors
+	omnisharp
 	pkg-info
 	popup
+	qml-mode
 	s
 	scala-mode2
 	scss-mode
+	smooth-scrolling
 	sublime-themes
 	tabbar
 	tabbar-ruler
@@ -48,20 +55,6 @@
   "elpa packages"
   )
 
-(defvar melpa-packages
-  '(floobits
-	matlab-mode
-	minimap
-	smooth-scrolling
-	)
-  "melpa-packages"
-  )
-
-(defvar marmalade-packages
-  '()
-  "marmalade-packages"
-  )
-
 (defun fetch-my-packages ()
   (unless package-archive-contents
   (package-refresh-contents))
@@ -71,13 +64,6 @@
 	  (package-install package)
 	  )
 	)
-
-  (dolist (package melpa-packages)
-	(unless (package-installed-p package)
-	  (package-install package)
-	  )
-	)
   )
-
 (provide 'package-conf)
 ;;; packages-conf.el ends here

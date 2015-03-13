@@ -82,6 +82,7 @@
 (load-library "c-conf")
 (load-library "cc-conf")
 (load-library "c++-conf")
+(load-library "d-conf")
 (load-library "go-conf")
 (load-library "csharp-conf")
 ;(load-library "text-conf")
