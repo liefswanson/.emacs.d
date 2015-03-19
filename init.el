@@ -71,6 +71,7 @@
 ;(load-library "flycheck-java")
 
 (add-to-list 'load-path "~/.emacs.d/conf")
+(load-library "faces-conf")
 (load-library "theme-conf")
 ;(load-library "tabbar-conf")
 (load-library "ergoemacs-conf")
