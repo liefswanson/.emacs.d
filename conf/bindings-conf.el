@@ -14,6 +14,10 @@
 (global-set-key (kbd "C-_") 'show-subtree)
 (global-set-key (kbd "C--") 'hide-subtree)
 
+(global-set-key (kbd "C-n") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-h") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-t") 'mc/mark-all-in-region-regex)
+
 (define-key yas-minor-mode-map (kbd "<tab>") nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
 ;; Set Yasnippet's key binding to shift+tab

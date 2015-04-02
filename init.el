@@ -47,13 +47,7 @@
 	 (save-options-on-exit off))))
  '(flycheck-clang-language-standard "c++14")
  '(global-auto-complete-mode t)
- '(initial-scratch-message
-   #(";; This buffer is for notes you don't want to save, and for Lisp evaluation.
-;; If you want to create a file, visit that file with Ctrl+O,
-;; then enter the text in that file's own buffer." 131 135
-													   (face ergoemacs-pretty-key)
-													   136 137
-													   (face ergoemacs-pretty-key)))
+ '(initial-scratch-message #(""))
  '(minimap-always-recenter nil)
  '(minimap-recenter-type (quote middle))
  '(minimap-update-delay 0.4)
