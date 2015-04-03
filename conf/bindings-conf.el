@@ -16,7 +16,7 @@
 
 (global-set-key (kbd "C-n") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-h") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-t") 'mc/mark-all-in-region-regex)
+(global-set-key (kbd "C-t") 'mc/mark-all-like-this)
 
 (define-key yas-minor-mode-map (kbd "<tab>") nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)

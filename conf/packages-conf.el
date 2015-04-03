@@ -6,9 +6,10 @@
 (require 'package)
 
 ;; elpa/package archives
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")))
+(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
 (package-initialize)
 
 (defvar elpa-package-deps
@@ -19,9 +20,6 @@
 	undo-tree
 	popup
 	fringe-helper
-	highlight
-	let-alist
-	visual-fill-column
 	)
   "Dependencies needed by various elpa packages, installed before their corresponding packages to avoid errors when cloning onto a new system."
   )
@@ -36,7 +34,6 @@
 	fish-mode
 	floobits
 	flycheck
-	flycheck-dmd
 	go-mode
 	glsl-mode
 	haskell-mode
