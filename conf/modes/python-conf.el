@@ -1,4 +1,33 @@
 ;;; package --- Summary
+(font-lock-add-keywords
+ 'python-mode
+ '(("\\<\\(\\sw+\\) *(" 1 font-lock-function-name-face))
+ )
+
+(font-lock-add-keywords
+ 'python-mode
+ '(("\\<\\(\\sw+\\)\\." 1 font-lock-type-face))
+ )
+
+(font-lock-add-keywords
+ 'python-mode
+ '(("\\<\\(self\\)\\." 1 font-lock-keyword-face))
+ )
+
+(font-lock-add-keywords
+ 'python-mode
+ '(("\\<\\(if\\|elif\\|while\\|for\\) *(" 1 font-lock-keyword-face))
+ )
+
+(font-lock-add-keywords
+ 'python-mode
+ '(("\\<\\(min\\|max\\|type\\|input\\|sorted\\|str\\|range\\|len\\|exit\\) *(" 1 font-lock-builtin-face))
+ )
+
+(font-lock-add-keywords
+ 'python-mode
+ '(("[^A-Z,a-z]\\([0-9]+\\)" 1 font-lock-string-face))
+ )
 
 ;;; Commentary:
 

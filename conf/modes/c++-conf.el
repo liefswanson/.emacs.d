@@ -30,7 +30,6 @@
 (font-lock-add-keywords
  'c++-mode
  '(("\\<\\(if\\|while\\|for\\|switch\\|catch\\|sizeof\\) *(" 1 font-lock-keyword-face))
-
  )
 
 (provide 'c++-conf)

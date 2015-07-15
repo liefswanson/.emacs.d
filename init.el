@@ -48,17 +48,30 @@
 	((backspace-is-back off)
 	 (save-options-on-exit off))))
  '(flycheck-clang-language-standard "c++14")
+ '(flycheck-csharp-omnisharp-curl-executable "curl")
  '(global-auto-complete-mode t)
- '(initial-scratch-message "")
+ '(initial-scratch-message
+   #(";; This buffer is for notes you don't want to save, and for Lisp evaluation.
+;; If you want to create a file, visit that file with Ctrl+O,
+;; then enter the text in that file's own buffer." 131 135
+													   (face ergoemacs-pretty-key)
+													   136 137
+													   (face ergoemacs-pretty-key)))
  '(minimap-always-recenter nil)
  '(minimap-recenter-type (quote middle))
  '(minimap-update-delay 0.4)
  '(minimap-width-fraction 0.13)
  '(minimap-window-location (quote right))
- '(org-CUA-compatible nil)
- '(recentf-menu-before nil)
+ '(omnisharp-server-executable-path
+   "/home/lief/OmniSharpServer/OmniSharp/bin/Debug/Omnisharp.exe")
+ '(org-CUA-compatible t)
+ '(org-special-ctrl-a/e t)
+ '(org-support-shift-select t)
+ '(recentf-menu-before "Close")
  '(recentf-mode t)
- '(shift-select-mode nil))
+ '(scroll-error-top-bottom t)
+ '(set-mark-command-repeat-pop t)
+ '(shift-select-mode t))
 
 ;(add-to-list 'load-path "~/.emacs.d/non-elpa")
 ;(load-library "flycheck-java")
@@ -75,10 +88,11 @@
 (add-to-list 'load-path "~/.emacs.d/conf/modes")
 (load-library "c-conf")
 (load-library "cc-conf")
+(load-library "csharp-conf")
 (load-library "c++-conf")
 (load-library "d-conf")
 (load-library "go-conf")
-(load-library "csharp-conf")
+(load-library "python-conf")
 ;(load-library "text-conf")
 (load-library "web-conf")
 (load-library "haskell-conf")
