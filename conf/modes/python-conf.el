@@ -11,22 +11,22 @@
 
 (font-lock-add-keywords
  'python-mode
- '(("\\<\\(self\\)\\." 1 font-lock-keyword-face))
+ '(("\\<\\(self\\)" 1 font-lock-keyword-face))
  )
 
 (font-lock-add-keywords
  'python-mode
- '(("\\<\\(if\\|elif\\|while\\|for\\) *(" 1 font-lock-keyword-face))
+ '(("\\<\\(if\\|elif\\|while\\|for\\|return\\) *(" 1 font-lock-keyword-face))
  )
 
 (font-lock-add-keywords
  'python-mode
- '(("\\<\\(min\\|max\\|type\\|input\\|sorted\\|str\\|range\\|len\\|exit\\) *(" 1 font-lock-builtin-face))
+ '(("\\<\\(min\\|max\\|type\\|input\\|sorted\\|str\\|\\|int\\|range\\|len\\|exit\\|print\\) *(" 1 font-lock-builtin-face))
  )
 
 (font-lock-add-keywords
  'python-mode
- '(("[^A-Z,a-z]\\([0-9]+\\)" 1 font-lock-string-face))
+ '(("\\<\\([0-9]+\\)" 1 font-lock-string-face))
  )
 
 ;;; Commentary:
