@@ -99,4 +99,6 @@
 (load-library "java-conf")
 (load-library "sass-conf")
 
+(modify-syntax-entry ?_ "w" python-mode-syntax-table)
+
 ;;; init.el ends here
