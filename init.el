@@ -95,9 +95,12 @@
 (load-library "python-conf")
 ;(load-library "text-conf")
 (load-library "web-conf")
+(load-library "js-conf")
 (load-library "haskell-conf")
 (load-library "java-conf")
 (load-library "sass-conf")
+(load-library "rust-conf")
+(load-library "typescript-conf")
 
 (modify-syntax-entry ?_ "w" python-mode-syntax-table)
 

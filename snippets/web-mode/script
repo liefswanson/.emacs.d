@@ -1,0 +1,4 @@
+#contributor : Anders Bach Nielsen <abachn@abachn.net>
+#name : <script src=...></script>
+# --
+<script src="${1:url}"></script>

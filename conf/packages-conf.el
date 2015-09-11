@@ -13,13 +13,20 @@
 (package-initialize)
 
 (defvar elpa-package-deps
-  '(s
+  '(highlight
+	json-reformat
+	json-snatcher
+	s
 	dash
 	epl
 	pkg-info
 	undo-tree
 	popup
 	fringe-helper
+	let-alist
+	pkg-info
+	popup
+	visual-fill-column
 	)
   "Dependencies needed by various elpa packages, installed before their corresponding packages to avoid errors when cloning onto a new system."
   )
@@ -34,22 +41,27 @@
 	fish-mode
 	floobits
 	flycheck
-	go-mode
 	glsl-mode
+	go-mode
+	groovy-mode
 	haskell-mode
 	js2-mode
+	json-mode
 	less-css-mode
-	malabar-mode
 	markdown-mode
 	matlab-mode
-	minimap
 	multiple-cursors
 	omnisharp
 	qml-mode
+	rust-mode
+	sbt-mode
 	scala-mode2
 	scss-mode
 	smooth-scrolling
 	sublime-themes
+	tide
+	toml-mode
+	typescript-mode
 	web-mode
 	yasnippet
 	)

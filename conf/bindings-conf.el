@@ -7,7 +7,7 @@
 ;ergoemacs goof up
 (global-set-key (kbd "M-{") 'split-window-horizontally)
 (global-set-key (kbd "M-3") 'split-window-vertically)
-(global-set-key [mouse-2] 'minimap-toggle)
+;(global-set-key [mouse-2] 'minimap-toggle)
 
 (global-unset-key (kbd "C-n"))
 
@@ -16,7 +16,9 @@
 
 (global-set-key (kbd "C-n") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-h") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-t") 'mc/mark-all-like-this)
+
+(global-set-key (kbd "C-c") 'mc/mmlte--up)
+(global-set-key (kbd "C-t") 'mc/mmlte--down)
 
 (define-key yas-minor-mode-map (kbd "<tab>") nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
