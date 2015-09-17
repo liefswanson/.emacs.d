@@ -35,6 +35,7 @@
   '(auto-complete
 	csharp-mode
 	d-mode
+	emacs-eclim
 	ensime
 	ergoemacs-mode
 	fic-mode
